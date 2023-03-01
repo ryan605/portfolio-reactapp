@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-control {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+}
+/* This CSS code applies the following styles: */
+/* 
+Sets the maximum width of the container to 500 pixels and centers it horizontally.
+Adds some padding and a background color to the container, and adds a border and border-radius for visual appeal.
+Increases the font size and weight of the form labels, and makes them display as block
+ */
+ /* Set the background color of the navbar */
+/* Set the background color of the navbar */
+.navbar {
+  background-color: #f2f2f2;
+}
+
+/* Style the navbar links */
+.navbar a {
+  color: #333;
+  padding: 12px;
+  text-decoration: none;
+}
+
+/* Change the color of the active link */
+.navbar a.active {
+  color: #007bff;
+}
+
+/* Add a hover effect to the links */
+.navbar a:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+/* Change the font size of the navbar brand */
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Change the display property of navbar-nav to flex */
+.navbar-nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Remove the list style from navbar-nav */
+.navbar-nav li {
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Add some spacing between the navbar links */
+.navbar-nav li:not(:last-child) {
+  margin-right: 10px;
 }
