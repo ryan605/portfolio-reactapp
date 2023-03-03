@@ -11,7 +11,7 @@ function Login(){
           <label htmlFor="InputName" className="form-label"> Password:</label>
           <input className="form-control" type="password"  />
           <br/>
-          <a href="/login">
+          <a href="/project">
           <button className="btn btn-primary" type="submit">Login</button>
           </a>
         </form>

@@ -4,6 +4,8 @@ import './App.css';
 import Home from './components/home';
 import Project from './components/projects';
 import Navbar from './components/navbar';
+import NotFound from './components/notFound';
+import Signup from './components/signup';
 
 
 function App() {
@@ -18,6 +20,11 @@ function App() {
     case "/login":
       Component = Login
       break
+    case "/signup":
+      Component = Signup
+      break
+    default:
+      Component = NotFound;
  }
   return (
   <div>
