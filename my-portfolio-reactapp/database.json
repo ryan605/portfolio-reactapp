@@ -1,7 +1,9 @@
 {
     "users":[
         {
-            
+            "id":     1,
+            "email": "langat@gmail.com",
+            "password":"password35334"
         }
     ]
 }

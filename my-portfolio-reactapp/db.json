@@ -1,0 +1,32 @@
+{
+    "projects":[
+        {
+            "project_id": "1",
+            "project_name":"Raw-bots",
+            "description":"Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "image_url": "https://media.tenor.com/0HKeW87Hm9QAAAAC/zoro-luffy-ussop-sanji.gif",
+            "repo_url": "https://github.com/ryan605/phase-3-sinatra-react-project",
+            "created_at":"2020-08-30",
+            "updated_at":"2020-08-30"
+        },
+        {
+            "project_id": "1",
+            "project_name":"Raw-bots",
+            "description":"Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "image_url": "https://media.tenor.com/0HKeW87Hm9QAAAAC/zoro-luffy-ussop-sanji.gif",
+            "repo_url": "https://github.com/ryan605/phase-3-sinatra-react-project",
+            "created_at":"2020-08-30",
+            "updated_at":"2020-08-30"
+        },
+        {
+            "project_id": "1",
+            "project_name":"Raw-bots",
+            "description":"Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "image_url": "https://media.tenor.com/0HKeW87Hm9QAAAAC/zoro-luffy-ussop-sanji.gif",
+            "repo_url": "https://github.com/ryan605/phase-3-sinatra-react-project",
+            "created_at":"2020-08-30",
+            "updated_at":"2020-08-30"
+        }
+    ]
+
+}

@@ -1,9 +1,13 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 
-function Project(){
+
+
+function Project({newProject}){
+    console.log(newProject)
+
     return(
         <div>
-            projects
+            home
         </div>
     )
 }
