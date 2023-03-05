@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 function ProjectItem(){
 
-    let projectUrl = "http://localhost:5005/projects"
+    let projectUrl = "http://localhost:9292/projects"
 
     const[name, setName] = useState('')
     const[description, setDescription] = useState('')

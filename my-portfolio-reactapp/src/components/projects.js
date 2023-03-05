@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from "react";
 
-let projectUrl = "http://localhost:5000/projects"
+let projectUrl = "http://localhost:9292/projects"
 function Project(){
 
 
@@ -13,6 +13,10 @@ function Project(){
          })
         
    },[])
+
+   function handleDestroy(id){
+    fetch(projectUrl/id)
+   }
 
     let project;
     if (newProjects && newProjects.length > 0) {
@@ -31,6 +35,7 @@ function Project(){
               </a>
               <p className="words">created_at: {value.created_at}</p>
               <p className="words">updated_at: {value.updated_at}</p>
+              <button onClick={()=>handleDestroy(value.id)}></button>
             </div>
           </div>
         );
