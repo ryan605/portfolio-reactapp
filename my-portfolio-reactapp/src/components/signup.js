@@ -24,7 +24,7 @@ function Signup() {
             });
             const data = await res.json();
             localStorage.setItem('token', data.token);
-            navigate('/login');
+            navigate('/home');
         } catch (err) {
             console.log(err);
         }

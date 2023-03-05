@@ -1,13 +1,17 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+
 
 export default function Navbar(){
     return(
         <nav className="navbar bg-body-dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/home">PORTFOLIO</a>
+          <NavLink className="navbar-brand" to="/home">PORTFOLIO</NavLink>
          <div className="navbar">
-                <a className="nav-link active" href="/home">Projects</a>
-                <a className="nav-link active" href="/login">Logout</a>
+                <NavLink className="nav-link active" to="/project">Projects</NavLink>
+                <NavLink className="nav-link active" to="/login">Logout</NavLink>
+                <NavLink className="nav-link active" to="/project/new">create</NavLink>
+                <NavLink to="/signup">signup</NavLink>
         </div>
         </div>
       </nav>

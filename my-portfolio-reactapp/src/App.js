@@ -1,51 +1,30 @@
-import React,{useEffect,useState} from 'react';
+import React from 'react';
+import { BrowserRouter ,Routes,Route} from 'react-router-dom';
 import Login from './components/login';
 import './App.css';
 import Home from './components/home';
 import Project from './components/projects';
 import Navbar from './components/navbar';
-import NotFound from './components/notFound';
 import Signup from './components/signup';
-
-
-function App() {
-
-
-  let projectUrl = "http://localhost:5000/projects"
-
-  const [newProjects, setProjects] = useState([])
-     useEffect(() =>{
-      fetch(projectUrl)
-           .then((response)=>response.json())
-           .then((data)=>{
-            setProjects(data)
-           })
-     },[])
+import ProjectItem from './components/projectitem';
 
 
 
-  let Component
- switch (window.location.pathname){
-  case "/home":
-    Component = Home
-   break
-   case "/project":
-    Component = Project
-    break
-    case "/login":
-      Component = Login
-      break
-    // case "/signup":
-    // Component = Signup
-    //   break
-    default:
-      Component = NotFound;
- }
+function App() {  
   return (
   <div>
-    <Navbar/>
-    <Component/>
-    <Project newProject={newProjects}/>
+     <div>
+      <BrowserRouter>
+      <Navbar />
+        <Routes>
+          <Route exact path="/home" element={<Home />} />
+          <Route exact path="/project" element={<Project/>}/>
+          <Route exact path="/login" element={<Login/>}/>
+          <Route exact path='/project/new'element={<ProjectItem/>}/>
+          <Route exact path='/signup' element={<Signup/>}/>
+        </Routes>
+      </BrowserRouter>
+    </div>
   </div>
   );
 }

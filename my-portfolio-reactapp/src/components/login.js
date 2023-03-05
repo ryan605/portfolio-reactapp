@@ -5,7 +5,7 @@ function Login(){
         <div className="container mt-4 cols-2">      
         <div className="row">
         <form >
-          <label htmlFor="InputName" className="form-label"> Username:  </label>
+          <label htmlFor="InputName" className="form-label"> Username:</label>
           <input className="form-control" type="text" />
           <br />
           <label htmlFor="InputName" className="form-label"> Password:</label>

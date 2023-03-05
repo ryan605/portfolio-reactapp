@@ -157,3 +157,38 @@ Increases the font size and weight of the form labels, and makes them display as
   background: rgb(36, 116, 221);
   color: white;
 }
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input, button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0062cc;
+}
+
+input:focus, button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #007bff;
+}
